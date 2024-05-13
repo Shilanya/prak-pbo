@@ -1,0 +1,18 @@
+bawah = int(input("batas bawah: "))
+atas = int(input("batas atas: "))
+
+def ganjil(bawah, atas):
+    if bawah < 0 or atas < 0:
+        print("Batas bawah dan atas yang dimasukkan tidak boleh di bawah Nol")
+        return
+    
+    total=0
+    for angka in range(bawah, atas):
+        if angka % 2 != 0:
+            print (angka)
+        
+            total+=angka
+           
+    print ("Total:", total)
+
+ganjil(lower, upper)

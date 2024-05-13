@@ -1,0 +1,11 @@
+jari2=float(input("Jari-Jari: "))
+
+if jari2<0:
+    print ("Jari-jari lingkaran tidak boleh negatif")
+    
+else :
+    Luas= 3.14*jari2*jari2
+    Kll=2*3.14*jari2
+    print ("Luas: ", Luas)
+    print ("Keliling: ",kll)
+    
