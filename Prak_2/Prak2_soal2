@@ -1,0 +1,21 @@
+def baju (func):
+    def wrapper (*args):
+        print("Pesanan Anda adalah:")
+        func(*args)
+    return wrapper
+
+class Beli_Baju:
+    
+    def __init__(self, merk, harga):
+        self.brand = merk
+        self.harga = harga
+    
+    @baju
+    def pesan (self):
+        print (f"Baju dengan brand {self.brand} \ndengan harga {self.harga}")
+        
+    def __del__ (self):
+        print("Baju telah dibayar")
+        
+uniqlo = Beli_Baju("No Merk", "Rp100000")
+uniqlo.pesan()
